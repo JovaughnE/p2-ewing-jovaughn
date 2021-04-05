@@ -10,20 +10,19 @@ body {
 	font-style: normal;
 	font-weight: 200;
 }
-/* Container */
+/* Container 
 .container {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
 	background-color: #FFFFFF;
-}
+}*/
 /* Navigation */
 header {
-	width: 100%;
-	height: 5%;
-	background-color: #52bad5;
-	border-bottom: 1px solid #2C9AB7;
+    background-color: #52bad5;
+    border-bottom: 1px solid #2c9ab7;
+    margin: auto;
 }
 .logo {
 	color: #fff;
@@ -73,10 +72,13 @@ ul li:hover a {
 }
 /* Hero Section */
 .hero {
-	background-color: #B3B3B3;
 	padding-top: 150px;
 	padding-bottom: 150px;
+	background-image: url(img/peoplehousemain@1x.png);
+	opacity: 2;
+	width: 100%;
 }
+
 .light {
 	font-weight: bold;
 	color: #717070;

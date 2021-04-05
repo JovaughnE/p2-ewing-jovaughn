@@ -1,0 +1,824 @@
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchm-A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v7/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oZDdwIA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinslab/v13/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4W71msd3k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/marckscript/v11/nwpTtK2oNgBA3Or78gapdwuCzw.ttf) format('truetype');
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: 'Abril Fatface', cursive;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+a:hover {
+  color: #4d3d80;
+}
+.btn {
+  padding: 0.75rem;
+  min-width: 150px;
+  font-size: 1.2rem;
+  border-radius: 0;
+  font-family: 'Bodoni Moda', serif;
+}
+.btn-primary {
+  background-color: #4d3d80;
+  border-color: #4d3d80;
+}
+.btn-primary:hover {
+  background-color: hsl(254.32835821, 35.44973545%, 27.05882353%);
+  border-color: hsl(254.32835821, 35.44973545%, 27.05882353%);
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  padding: 2rem 9.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  padding-right: 4.6rem;
+  font-family: 'Abril Fatface', cursive;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  clip: initial;
+  margin: inherit;
+  padding: inherit;
+  border: initial;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+footer .footer-column {
+  min-width: 12rem;
+  padding: 3rem;
+}
+footer .footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+footer .footer-column p {
+  color: #333;
+}
+.home-hero-image-top {
+  background: url('../img/dock.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.home-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 9rem 18.75rem;
+}
+.home-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.balance {
+  height: 500px;
+  text-align: center;
+}
+.balance h3 {
+  padding-top: 80px;
+}
+.balance .balance-images-container {
+  display: flex;
+  justify-content: center;
+}
+.balance .balance-images-container .balance-image {
+  padding: 3rem;
+}
+.balance .balance-images-container .balance-image img {
+  width: auto;
+  height: 175px;
+}
+.balance .balance-images-container .balance-image h4 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.home-content-container {
+  height: 700px;
+  display: flex;
+}
+.home-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.home-content-container .content-section .left-content {
+  width: 305px;
+  float: right;
+  padding-top: 100px;
+}
+.home-content-container .content-section .right-content img {
+  width: 400px;
+  height: auto;
+}
+.home-hero-image-bottom {
+  background: url('../img/stones.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.home-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.home-hero-image-bottom .hero-image-content .hero-image-content-wrapper {
+  text-align: center;
+}
+.massage-hero-image-top {
+  background: url('../img/hands.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.massage-hero-image-top .hero-image-content {
+  color: white;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 18.75rem;
+}
+.massage-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.massage-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+}
+.massage-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.massage-content-container .content-section .left-content {
+  float: right;
+}
+.massage-content-container .content-section .left-content img {
+  width: 400px;
+  height: auto;
+}
+.massage-content-container .content-section .right-content {
+  width: 305px;
+  padding-top: 40px;
+}
+.massage-hero-image-bottom {
+  background: url('../img/massage-h.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.massage-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
+}
+.stretch-hero-image-top {
+  background: url('../img/stretch-banner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.stretch-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 9rem 0 18.75rem;
+}
+.stretch-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.stretch-hero-image-top .hero-image-content .hero-image-content-wrapper {
+  text-align: right;
+  width: 500px;
+}
+.stretch-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+}
+.stretch-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.stretch-content-container .content-section .left-content {
+  float: right;
+}
+.stretch-content-container .content-section .left-content img {
+  width: 400px;
+  height: auto;
+}
+.stretch-content-container .content-section .right-content {
+  width: 500px;
+  padding-top: 40px;
+}
+.stretch-hero-image-bottom {
+  background: url('../img/beach-small.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.stretch-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
+}
+.facial-hero-image-top {
+  background: url('../img/oil.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.facial-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 18.75rem;
+}
+.facial-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.facial-hero-image-bottom {
+  background: url('../img/roller.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.facial-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
+}
+.appointment-hero-image-top {
+  background: url('../img/grassy-rocks.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  width: auto;
+  z-index: -1;
+}
+.needs-validation {
+  width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0.5px #aaa;
+  background-color: white;
+}
+.needs-validation .row .col {
+  padding: 40px 50px;
+}
+.needs-validation label {
+  padding-bottom: 20px;
+}
+.form-group {
+  padding: 40px;
+}
+.form-control {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+.submit-container,
+.appointment-form-container {
+  display: flex;
+  justify-content: center;
+}
+.appointment-form-container {
+  position: relative;
+  top: -250px;
+}
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .btn {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+  header #stellaLogo {
+    width: 30px;
+    height: auto;
+  }
+  header nav {
+    padding: 1rem 5rem;
+  }
+  header nav ul li {
+    padding-right: 2rem;
+  }
+  footer {
+    padding: 1.5rem 0;
+  }
+  footer .footer-column {
+    min-width: 9rem;
+    padding: 1.5rem;
+  }
+  footer .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  .home-hero-image-top {
+    background: url('../img/dock.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .home-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+  .home-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .home-hero-image-top .hero-image-content a {
+    margin-left: 20px;
+  }
+  .balance {
+    height: 400px;
+  }
+  .balance h3 {
+    padding-top: 60px;
+  }
+  .balance .balance-images-container .balance-image {
+    padding: 1.5rem;
+  }
+  .balance .balance-images-container .balance-image img {
+    width: auto;
+    height: 130px;
+  }
+  .home-content-container {
+    height: 500px;
+    display: flex;
+  }
+  .home-content-container .content-section {
+    padding: 20px;
+  }
+  .home-content-container .content-section .left-content {
+    width: 300px;
+    padding-top: 50px;
+  }
+  .home-content-container .content-section .right-content img {
+    width: 300px;
+  }
+  .home-hero-image-bottom {
+    background: url('../img/stones.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .home-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-hero-image-bottom .hero-image-content .hero-image-heading {
+    padding-bottom: 1rem;
+  }
+  .massage-hero-image-top {
+    background: url('../img/hands.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .massage-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  .massage-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .massage-content-container {
+    height: 450px;
+    padding-top: 30px;
+  }
+  .massage-content-container .content-section {
+    padding: 20px;
+  }
+  .massage-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container .content-section .right-content {
+    width: 305px;
+    padding-top: 20px;
+  }
+  .massage-hero-image-bottom {
+    background: url('../img/massage-h.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .massage-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .massage-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+  .stretch-hero-image-top {
+    background: url('../img/stretch-banner.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .stretch-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .stretch-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .stretch-hero-image-top .hero-image-content .hero-image-content-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .stretch-content-container {
+    height: 550px;
+    display: flex;
+    padding-top: 60px;
+  }
+  .stretch-content-container .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+  }
+  .stretch-content-container .content-section .left-content {
+    float: right;
+  }
+  .stretch-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .stretch-content-container .content-section .right-content {
+    width: 300px;
+    padding-top: 40px;
+  }
+  .stretch-hero-image-bottom {
+    background: url('../img/beach-small.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .stretch-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stretch-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+  .facial-hero-image-top {
+    background: url('../img/oil.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .facial-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .facial-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .facial-hero-image-top .hero-image-content .hero-image-content-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .facial-hero-image-bottom {
+    background: url('../img/roller.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .facial-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .facial-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header-appointment {
+    display: none;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+  header #stellaLogo {
+    width: 25px;
+    height: auto;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+  }
+  header nav ul li {
+    padding-right: 1rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .footer-column {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  footer .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  .home-hero-image-top .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .home-hero-image-top .hero-image-content a {
+    margin-left: 0px;
+  }
+  .balance {
+    height: 700px;
+  }
+  .balance h3 {
+    padding-top: 30px;
+  }
+  .balance .balance-images-container {
+    flex-direction: column;
+  }
+  .balance .balance-images-container .balance-image {
+    padding: 1rem;
+  }
+  .home-content-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-content-container .content-section {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .home-content-container .content-section .left-content {
+    width: 100%;
+  }
+  .home-content-container .content-section .right-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container {
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .massage-content-container .content-section {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .massage-content-container .content-section .left-content {
+    float: none;
+  }
+  .massage-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container .content-section .right-content {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .stretch-content-container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .stretch-content-container .content-section {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .stretch-content-container .content-section .left-content {
+    width: 100%;
+    float: right;
+  }
+  .stretch-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .stretch-content-container .content-section .right-content {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .appointment-form-container .needs-validation .row {
+    display: flex;
+    flex-direction: column;
+  }
+}

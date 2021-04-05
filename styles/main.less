@@ -1,0 +1,766 @@
+// Imports
+@import "mixin";
+
+// Shared styles
+body {
+  padding: 0;
+  margin: 0;
+  @font-bodoni-moda();
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h5, h6 {
+  @font-abril-fatface();
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+a:hover {
+  color: @color-1;
+}
+
+// Bootstrap Overwrites
+.btn {
+  padding: .75rem;
+  min-width: 150px;
+  font-size: 1.2rem;
+  border-radius: 0;
+  @font-bodoni-moda();
+}
+.btn-primary {
+  background-color: @color-1;
+  border-color: @color-1;
+  &:hover {
+    background-color: darken(hsl(@color-1), 10%);
+    border-color: darken(hsl(@color-1), 10%);
+  }
+}
+
+// Header
+header {
+  @centered-vertical();
+  nav {
+    width: 100%;
+    padding: 2rem 9.3rem;
+    @centered-vertical();
+    justify-content: space-between;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline;
+        padding-right: 4.6rem;
+        @font-abril-fatface();
+      }
+    }
+  }
+}
+
+// Accessibility related styles
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  clip: initial;
+  margin: inherit;
+  padding: inherit;
+  border: initial;
+}
+
+// Footer
+footer {
+  @centered-horizontal();
+  padding: 3rem 0;
+  .footer-column {
+    min-width: 12rem;
+    padding: 3rem;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: #333;
+    }
+  }
+}
+
+// Home
+
+.home-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/dock.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    padding: 0 0 9rem 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.balance {
+  height: 500px;
+  text-align: center;
+  h3 {
+    padding-top: 80px;
+  }
+  .balance-images-container {
+    @centered-horizontal();
+    .balance-image {
+      padding: 3rem;
+      img {
+        width: auto;
+        height: 175px;
+      }
+      h4 {
+        padding-top: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.home-content-container {
+  height: 700px;
+  display: flex;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      width: 305px;
+      float: right;
+      padding-top: 100px;
+    }
+    .right-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.home-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/stones.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+// Massage
+
+.massage-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/hands.jpg', @height);
+  .hero-image-content {
+    color: white;
+    height: @height;
+    @centered-vertical();
+    padding-left: 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.massage-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 305px;
+      padding-top: 40px;
+    }
+  }
+}
+
+.massage-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/massage-h.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
+
+// Stretch
+
+.stretch-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/stretch-banner.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    justify-content: flex-end;
+    padding: 0 9rem 0 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      text-align: right;
+      width: 500px;
+    }
+  }
+}
+
+.stretch-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 500px;
+      padding-top: 40px;
+    }
+  }
+}
+
+.stretch-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/beach-small.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
+
+// Facial
+
+.facial-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/oil.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    padding-left: 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+
+.facial-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/roller.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
+
+// Appointment
+
+.appointment-hero-image-top {
+  @height: 400px;
+  .hero-image-base('../img/grassy-rocks.jpg', @height);
+  z-index: -1;
+}
+
+.needs-validation {
+  width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0.5px #aaa;
+  background-color: white;
+  .row {
+    .col {
+      padding: 40px 50px;
+    }
+  }
+  label {
+    padding-bottom: 20px;
+  }
+}
+
+.form-group {
+  padding: 40px;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.submit-container, .appointment-form-container {
+  @centered-horizontal();
+}
+
+.appointment-form-container {
+  position: relative;
+  top: -250px
+}
+
+@media only screen and (max-width: 1200px)  {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .btn {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+  header {
+    #stellaLogo {
+      width: 30px;
+      height: auto;
+    }
+    nav {
+      padding: 1rem 5rem;
+      ul {
+        li {
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 1.5rem 0;
+    .footer-column {
+      min-width: 9rem;
+      padding: 1.5rem;
+      h3 {
+        font-size: 15px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .home-hero-image-top {
+    @height: 300px;
+    .hero-image-base('../img/dock.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      padding: 0 0 0 0;
+      .hero-image-heading {
+        padding-bottom: 1.5rem;
+      }
+      a {
+        margin-left: 20px;
+      }
+    }
+  }
+  .balance {
+    height: 400px;
+    h3 {
+      padding-top: 60px;
+    }
+    .balance-images-container {
+      .balance-image {
+        padding: 1.5rem;
+        img {
+          width: auto;
+          height: 130px;
+        }
+      }
+    }
+  }
+  .home-content-container {
+    height: 500px;
+    display: flex;
+    .content-section {
+      padding: 20px;
+      .left-content {
+        width: 300px;
+        padding-top: 50px;
+      }
+      .right-content {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .home-hero-image-bottom {
+    @height: 250px;
+    .hero-image-base('../img/stones.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      .hero-image-heading {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  .massage-hero-image-top {
+    @height: 300px;
+    .hero-image-base('../img/hands.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      text-align: center;
+      padding-left: 0;
+      .hero-image-heading {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+  .massage-content-container {
+    height: 450px;
+    padding-top: 30px;
+    .content-section {
+      padding: 20px;
+      .left-content {
+        img {
+          width: 300px;
+          height: auto;
+        }
+      }
+      .right-content {
+        width: 305px;
+        padding-top: 20px;
+      }
+    }
+  }
+  .massage-hero-image-bottom {
+    @height: 250px;
+    .hero-image-base('../img/massage-h.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      .hero-image-heading {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .hero-image-content-wrapper {
+        ul {
+          li {
+            margin: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+  .stretch-hero-image-top {
+    @height: 300px;
+    .hero-image-base('../img/stretch-banner.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      padding: 0;
+      .hero-image-heading {
+        padding-bottom: 1.5rem;
+      }
+      .hero-image-content-wrapper {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .stretch-content-container {
+    height: 550px;
+    display: flex;
+    padding-top: 60px;
+    .content-section {
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+      .left-content {
+        img {
+          width: 300px;
+          height: auto;
+        }
+        float: right;
+      }
+      .right-content {
+        width: 300px;
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .stretch-hero-image-bottom {
+    @height: 250px;
+    .hero-image-base('../img/beach-small.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      .hero-image-heading {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .hero-image-content-wrapper {
+        ul {
+          li {
+            margin: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+  .facial-hero-image-top {
+    @height: 300px;
+    .hero-image-base('../img/oil.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      padding: 0;
+      .hero-image-heading {
+        padding-bottom: 1.5rem;
+      }
+      .hero-image-content-wrapper {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+  .facial-hero-image-bottom {
+    @height: 250px;
+    .hero-image-base('../img/roller.jpg', @height);
+    .hero-image-content {
+      height: @height;
+      @perfect-centering();
+      .hero-image-heading {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .hero-image-content-wrapper {
+        ul {
+          li {
+            margin: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px)  {
+  .header-appointment {
+    display: none;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+  header {
+    #stellaLogo {
+      width: 25px;
+      height: auto;
+    }
+    nav {
+      @centered-horizontal();
+      padding: 1rem 2.5rem;
+      ul {
+        li {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    .footer-column {
+      text-align: center;
+      padding: .5rem;
+      h3 {
+        font-size: 15px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .home-hero-image-top {
+    .hero-image-content {
+      .hero-image-heading {
+        text-align: center;
+        padding-bottom: 1.5rem;
+      }
+      a {
+        margin-left: 0px;
+      }
+    }
+  }
+  .balance {
+    height: 700px;
+    h3 {
+      padding-top: 30px;
+    }
+    .balance-images-container {
+      flex-direction: column;
+      .balance-image {
+        padding: 1rem;
+      }
+    }
+  }
+  .home-content-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .content-section {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      .left-content {
+        width: 100%;
+      }
+      .right-content {
+        img {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .massage-content-container {
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    .content-section {
+      width: 100%;
+      height: auto;
+      padding: 30px;
+      justify-content: center;
+      text-align: center;
+      .left-content {
+        img {
+          width: 300px;
+          height: auto;
+        }
+        float: none;
+      }
+      .right-content {
+        width: 100%;
+        padding-top: 10px;
+      }
+    }
+  }
+  .stretch-content-container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    .content-section {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      .left-content {
+        width: 100%;
+        img {
+          width: 300px;
+          height: auto;
+        }
+        float: right;
+      }
+      .right-content {
+        width: 100%;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .appointment-form-container {
+    .needs-validation {
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+

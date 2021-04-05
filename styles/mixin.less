@@ -1,0 +1,27 @@
+@import "variables";
+
+@centered-vertical: {
+  display: flex;
+  align-items: center;
+}
+
+@centered-horizontal: {
+  display: flex;
+  justify-content: center;
+}
+
+@perfect-centering: {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-base(@url, @height) {
+  background: url(@url) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: @height;
+  width: auto;
+}

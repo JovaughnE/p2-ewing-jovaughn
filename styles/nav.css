@@ -75,10 +75,12 @@ color: #2C9AB7;
 
 .menu-title:hover {
   background: #8db842;
+  border-radius: 7px;
 }
 
 .menu-title:hover:before {
   border-top-color: #8db842;
+  border-radius: 7px;
 }
 
 .menu:hover > .menu-title:before {
@@ -92,7 +94,7 @@ color: #2C9AB7;
   height: 0;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
-  border-bottom: 0 solid #ebebeb;
+  border-bottom: 0 solid #808080;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -107,57 +109,71 @@ color: #2C9AB7;
 
 .menu-title_2nd {
   background: #4e96b3;
+  border-radius: 7px;
 }
 
 .menu-title_2nd:hover {
-  background: #3e86a3;
+  background: #4e96b3;
+  border-radius: 7px;
+  opacity: .5;
 }
 
 .menu-title_2nd:before {
   border-top-color: #4e96b3;
+  border-radius: 7px;
 }
 
 .menu-title_2nd:hover:before {
   border-top-color: #3e86a3;
+  border-radius: 7px;
 }
 
 .menu-title_3rd {
-  background: #c97676;
+  background: #58cf58;
+  border-radius: 7px;
 }
 
 .menu-title_3rd:hover {
-  background: #b96666;
+  background: #58cf58;
+  border-radius: 7px;
+  opacity: .5;
 }
 
 .menu-title_3rd:before {
-  border-top-color: #c97676;
+  border-top-color: #58cf58;
+  border-radius: 7px;
 }
 
 .menu-title_3rd:hover:before {
-  border-top-color: #b96666;
+  border-top-color: #58cf58;
+  border-radius: 7px;
 }
 
 .menu-title_4th {
   background: #dbab58;
+  border-radius: 7px;
 }
 
 .menu-title_4th:hover {
   background: #cb9b48;
+  border-radius: 7px;
 }
 
 .menu-title_4th:before {
   border-top-color: #dbab58;
+  border-radius: 7px;
 }
 
 .menu-title_4th:hover:before {
   border-top-color: #cb9b48;
+  border-radius: 7px;
 }
 
 .menu-dropdown {
   min-width: 100%;
   padding: 15px 0;
   position: absolute;
-  background: #ebebeb;
+  background: #808080;
   z-index: 100;
   transition: 0.5s padding, 0.5s background;
 }

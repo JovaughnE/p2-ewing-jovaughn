@@ -74,13 +74,17 @@ header {
   display: flex;
   align-items: center;
 }
-header nav {
-  width: 100%;
+/*header nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
   padding: 2rem 9.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
+
 header nav ul {
   margin: 0;
   padding: 0;
@@ -437,7 +441,7 @@ footer .footer-column p {
     height: auto;
   }
   header nav {
-    padding: 1rem 5rem;
+    padding: 1rem 0rem;
   }
   header nav ul li {
     padding-right: 2rem;

@@ -28,6 +28,7 @@
   }
 
 @charset "UTF-8";
+
 /* Body */
 body {
 	font-family: source-sans-pro;
@@ -102,8 +103,8 @@ header {
 .text_column {
     border-color: #a8931d;
     border-style: solid;
-    border-radius: 5px;
-    border-width: 5px;
+    border-width: 3px;
+    border-radius: 5%;
     width: 28%;
     text-align: justify;
     font-weight: lighter;
@@ -111,7 +112,7 @@ header {
     float: left;
     padding: 3%;
     color: #4e4e4e;
-    margin: 2%;
+    margin: 6% 2% 0% 3%;
 }
 .about {
     padding: 5% 5% 5% 5%;
@@ -119,7 +120,7 @@ header {
     background-color: #eaeaea;
     margin: -10% 0 3% 0;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #626262;
 }
 /* Stats Gallery */

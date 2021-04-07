@@ -101,8 +101,16 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-// Header menu button
 
-$(".menu-icon").click(function() {
-    $(".nav-bar").toggle('slow');
+ // Scrolling tabs
+
+document.querySelectorAll(".sexytabs").tabs({ 
+    show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
+    hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" } 
   });
+  
+// Hamburger menu JS
+
+document.getElementsByClassName(".menu-icon").click(function () {
+    document.getElementsByClassName(".nav-bar").toggle("slow");
+});

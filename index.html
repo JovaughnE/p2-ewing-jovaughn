@@ -7,55 +7,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="styles/main.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/parallax.css">-->
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
     <!-- <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" /> -->
     <title>Home | People House</title>
   </head>
   <body>
     <!-- Header -->
-    
+ 
     <header>
-      <h2 class="hero_header">People<span class="light">House</span></h2>
+      <div class="main-wrapper">
+        <header class="header">
+          <div class="logo">
+            <h1>People House</h1>
+          </div>
+          <div class="feature-content">
+            <h1>Start of a new you!</h1>
+            <p>Welcome to your road to freedom!</p>
+            <a href="services.html" class="theme-btn btn-animated">Click here to find a specialist!</a>
+          </div>
+        </header>
+        
+        <div class="menu-icon">
+            <img src="https://img.icons8.com/cotton/2x/menu.png"/>
+         </div>
+        
+        <div class="nav-bar" style="display: none;">
+          <ul>
+            <li>
+              <a href="#">
+                Who are we!
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                What we do!
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Where are we!
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
       <nav>
-        <!-- Main Menu -->
-        <ul class="hList">
-          <li>
-            <a href="#click" class="menu"><h2 class="menu-title">Who?</h2>
-            <!-- Who are we Sub Menu -->
-            <ul class="menu-dropdown">
-              <li>Purpose</li>
-              <li>Practice</li>
-              <li>People</li>
-            </ul>
-            </a>
-          </li>
-          <li>
-            <a href="#click" class="menu"><h2 class="menu-title menu-title_2nd">What?</h2>
-            <!-- Services Sub Menu -->
-            <ul class="menu-dropdown">
-              <li>One-on-one Counseling</li>
-              <li>Couples Counseling</li>
-              <li>Family Counseling</li>
-              <li>Spiritual Counseling</li>
-              <li>Children's Therapy</li>
-              <li>Play Therapy</li>
-            </ul>
-          </a>
-          </li>
-          <li>
-            <a href="#click" class="menu"><h2 class="menu-title menu-title_3rd">Where?</h2>
-            <!-- Company Sub Menu -->
-            <ul class="menu-dropdown">
-              <li>Central</li>
-              <li>North</li>
-              <li>East</li>
-            </ul>
-          </li>
-        </ul>
-      </a>
-      </nav>
-    </section>
+
       <div id="scroll-animate">
         <div id="scroll-animate-main">
           <div class="wrapper-parallax">    
@@ -73,9 +81,9 @@
     <!-- About Section -->
     <section class="about" id="about">
       <h2 class="hidden">People House Promise</h2>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text_column" id="purpose">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text_column" id="practice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="text_column" id="place">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
     <section class="banner">
       <p class="tagline">Your safe space, to work on you!</p>

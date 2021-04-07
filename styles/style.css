@@ -1,3 +1,32 @@
+@font-face {
+	font-family: 'Abril Fatface';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchm-A.ttf) format('truetype');
+  }
+  @font-face {
+	font-family: 'Bodoni Moda';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/bodonimoda/v7/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oZDdwIA.ttf) format('truetype');
+  }
+  @font-face {
+	font-family: 'Josefin Slab';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/josefinslab/v13/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4W71msd3k.ttf) format('truetype');
+  }
+  @font-face {
+	font-family: 'Marck Script';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/marckscript/v11/nwpTtK2oNgBA3Or78gapdwuCzw.ttf) format('truetype');
+  }
+
 @charset "UTF-8";
 /* Body */
 body {
@@ -87,11 +116,11 @@ header {
 .about {
     padding: 5% 5% 5% 5%;
     display: inline-block;
-    background-color: #FFFFFF;
-    margin: 3% 0 3% 0;
+    background-color: #eaeaea;
+    margin: -10% 0 3% 0;
     text-align: center;
-	font-size: 1.2em;
-	color: #626262
+    font-size: 1.2em;
+    color: #626262;
 }
 /* Stats Gallery */
 .stats {
@@ -132,12 +161,13 @@ header {
 }
 /* Parallax Section */
 .banner {
-    background-color: #2D9AB7;
-    background-image: url("img/ph_main.png");
-    height: 250px;
-    background-attachment: fixed;
+    height: 34vh;
+    background: linear-gradient(to left, rgba(12, 233, 249, 0.79), rgba(18, 149, 236, 0.85));
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 6%, 100% 30vh, 0 65%);
+    position: relative;
+    border-radius: 0% 0% 18% 45%;
 }
 .parallax {
     color: #FFFFFF;
@@ -161,7 +191,14 @@ header {
 
 
 /* footer */
-	footer{background:#111111;width:100%;display:block;overflow:hidden}
+footer {
+    height: 41vh;
+    background: linear-gradient(to right, rgba(12, 233, 249, 0.79), rgba(18, 149, 236, 0.85));
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 18%, 100% 41vh, 0 81%);
+    position: relative;
+}
 	#footer-wrapper {margin:0 auto;padding:0}
 	#footer-limit{position:relative;display:block;margin:0 auto;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 	/* Footer 3 column */
